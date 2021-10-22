@@ -1,0 +1,83 @@
+header{
+    background-color: #363a3f;
+    height: 70px;
+}
+footer{
+    background-color: #363a3f;
+    height: 200px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-top: 120px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 1000px;
+}
+li{
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    opacity: 50%;
+}
+.nen{
+    color: white;
+    margin-top: 22px;
+    margin-left: 20px;
+    font-size: 20px;
+    opacity: 100%;
+}
+a:hover{
+    opacity: 100%;
+}
+.cata{
+    color:rgb(20, 169, 255);
+    padding: 15px;
+    border: 1px solid gray;
+    width: 400px;
+}
+table, th, td {  
+  border-collapse: collapse;
+}
+.netaShop{
+    width: 400px;
+    display: inline-block;
+    margin-right: 100px;
+}
+#slideshow {
+  overflow: hidden;
+  height: 400px;
+  width: 1000px;
+  display: inline-block;
+  margin-top: 50px;
+}
+.slide-wrapper {
+  width: 3000px;
+  -webkit-animation: slide 14s ease infinite;
+}
+.slide {
+  float: left;
+  height: 400px;
+  width: 1000px;
+}
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -1000px;}
+  50% {margin-left: -1000px;}
+  60% {margin-left: -2000px;}
+  80% {margin-left: -2000px;}
+}
+.parent{
+  display: flex;
+  margin-inline: 20px;
+}
