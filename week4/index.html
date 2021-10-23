@@ -1,60 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src=”custom.js”></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="custom.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 </head>
+
 <body>
-    <header style="display: flex;">
-       <a class="nen" href="">Nền tảng</a>
-       <ul>
-           <li><a href="">Trang chủ</a></li>
-           <li><a href="">Giới thiệu</a></li>
-           <li><a href="">Dịch vụ</a></li>
-           <li><a href="">Liên hệ</a></li>
-       </ul>
-    </header>
-    <div class="parent">
-        <div class="netaShop">
-            <h1>NeTa shop</h1>
-            <table>
-              <tr>
-                  <td class="cata">Category 1</td>
-              </tr>
-              <tr>
-                  <td class="cata">Category 2</td>
-              </tr>
-              <tr>
-                  <td class="cata">Category 3</td>
-              </tr>
-            </table>
-        </div>
-        <div>
-          <div id="slideshow">
-            <div class="slide-wrapper">
-              <div class="slide"><img src="images/Artboard 1.png"></div>
-              <div class="slide"><img src="images/Artboard 2.png"></div>
-              <div class="slide"><img src="images/Artboard 3.png"></div>
-            </div>
-          </div>
-          <div style="margin-top: 50px;">
-            <img src="images/Artboard 4.png" alt="">
-            <img style="margin-inline: 46px;" src="images/Artboard 4.png" alt="">
-            <img src="images/Artboard 4.png" alt="">
-          </div>
-          <div style="margin-top: 50px;">
-            <img src="images/Artboard 4.png" alt="">
-            <img style="margin-inline: 46px;" src="images/Artboard 4.png" alt="">
-            <img src="images/Artboard 4.png" alt="">
-          </div>
-        </div>
+  <header style="display: flex;">
+    <a class="nen" href="">Nền tảng</a>
+    <ul>
+      <li><a href="">Trang chủ</a></li>
+      <li><a href="">Giới thiệu</a></li>
+      <li><a href="">Dịch vụ</a></li>
+      <li><a href="">Liên hệ</a></li>
+    </ul>
+  </header>
+  <div class="parent">
+    <div class="netaShop">
+      <h1>NeTa shop</h1>
+      <table>
+        <tr>
+          <td class="cata">Category 1</td>
+        </tr>
+        <tr>
+          <td class="cata">Category 2</td>
+        </tr>
+        <tr>
+          <td class="cata">Category 3</td>
+        </tr>
+      </table>
     </div>
-    <footer style="margin-top: 50px;">
-      <span style="text-align: center;">Bản quyền bởi TDĐ</span>
-    </footer>
+    <div>
+      <!-- Thẻ Chứa Slideshow -->
+      <div style="margin-top: 50px;" class="slideshow-container">
+        <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/Artboard 1.png" style="width:100%">
+          <div class="text">Nội Dung 1</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/Artboard 2.png" style="width:100%">
+          <div class="text">Nội Dung 2</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/Artboard 3.png" style="width:100%">
+          <div class="text">Nội Dung 3</div>
+        </div>
+        <!-- Nút điều khiển mũi tên-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br>
+      <!-- Nút tròn điều khiển slideshow-->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+      <div>
+        <div class="anhZ">
+          <div style="height: 38%;">
+            <img src="images/Untitled-4.png" alt="">
+          </div>
+          <div style="height: 53%; padding: 20px;">
+            <h3 style="margin-top: 0">Sản Phẩm One</h3>
+            <h3>$24.99</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti sed officia quos rerum aut dolor
+              animi necessitatibus quod ad, mollitia .</p>
+          </div>
+          <div style="height: 9%;padding-left: 20px;padding-top: 10px; background-color: rgb(226, 226, 226);">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="anhZ" style="margin-inline: 35px;">
+          <div style="height: 38%;">
+            <img src="images/Untitled-4.png" alt="">
+          </div>
+          <div style="height: 53%; padding: 20px;">
+            <h3 style="margin-top: 0">Sản Phẩm One</h3>
+            <h3>$24.99</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti sed officia quos rerum aut dolor
+              animi necessitatibus quod ad, mollitia .</p>
+          </div>
+          <div style="height: 9%;padding-left: 20px;padding-top: 10px; background-color: rgb(226, 226, 226);">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="anhZ">
+          <div style="height: 38%;">
+            <img src="images/Untitled-4.png" alt="">
+          </div>
+          <div style="height: 53%; padding: 20px;">
+            <h3 style="margin-top: 0">Sản Phẩm One</h3>
+            <h3>$24.99</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti sed officia quos rerum aut dolor
+              animi necessitatibus quod ad, mollitia .</p>
+          </div>
+          <div style="height: 9%;padding-left: 20px;padding-top: 10px; background-color: rgb(226, 226, 226);">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="anhZ">
+          <div style="height: 38%;">
+            <img src="images/Untitled-4.png" alt="">
+          </div>
+          <div style="height: 53%; padding: 20px;">
+            <h3 style="margin-top: 0">Sản Phẩm One</h3>
+            <h3>$24.99</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti sed officia quos rerum aut dolor
+              animi necessitatibus quod ad, mollitia .</p>
+          </div>
+          <div style="height: 9%;padding-left: 20px;padding-top: 10px; background-color: rgb(226, 226, 226);">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="anhZ" style="margin-inline: 35px;">
+          <div style="height: 38%;">
+            <img src="images/Untitled-4.png" alt="">
+          </div>
+          <div style="height: 53%; padding: 20px;">
+            <h3 style="margin-top: 0">Sản Phẩm One</h3>
+            <h3>$24.99</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti sed officia quos rerum aut dolor
+              animi necessitatibus quod ad, mollitia .</p>
+          </div>
+          <div style="height: 9%;padding-left: 20px;padding-top: 10px; background-color: rgb(226, 226, 226);">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="anhZ">
+          <div style="height: 38%;">
+            <img src="images/Untitled-4.png" alt="">
+          </div>
+          <div style="height: 53%; padding: 20px;">
+            <h3 style="margin-top: 0">Sản Phẩm One</h3>
+            <h3>$24.99</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti sed officia quos rerum aut dolor
+              animi necessitatibus quod ad, mollitia .</p>
+          </div>
+          <div style="height: 9%;padding-left: 20px;padding-top: 10px; background-color: rgb(226, 226, 226);">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer style="margin-top: 50px;">
+    <span>Bản quyền bởi TDĐ</span>
+  </footer>
 </body>
+
 </html>
