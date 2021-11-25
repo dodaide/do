@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2</title>
+    <style type="text/css"> 
+        table, th, td {  
+            border: 3px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+        #table{
+            display: none;
+            padding: 0px;
+            border: 0px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="show()">Bấm vô</button>
+    <table id="table">
+        <tr>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Địa chỉ</th>
+        </tr>
+    </table>
+</body>
+<script>
+    this.OBJ = function(ten,tuoi,diaChi){
+        var name = ten;
+        var age = tuoi;
+        var add = diaChi;
+
+        this.getName = function(){
+            return name;
+        }
+        this.getAge = function(){
+            return age;
+        }
+        this.getAdd = function(){
+            return add;
+        }
+    };
+    var array = new Array();
+    array[0] = new OBJ("Trần Doãn Đô","20","Ninh Bình");
+    array[1] = new OBJ("Đô Đại Đế","20","Ninh Bình");
+    array[2] = new OBJ("Dương Mập","19","Thanh Hóa");
+    array[3] = new OBJ("Dương Non","19","Thanh Hóa");
+    array[4] = new OBJ("Huyền Lươn","1999","Thanh Hóa");
+    array[5] = new OBJ("Em Huyền","1999","Thanh Hóa");
+    function show(){
+        document.getElementById("table").style.display = "block";
+        var result ="<tr><th>Tên</th><th>Tuổi</th><th>Địa chỉ</th></tr>";
+        for(var i=0 ; i< array.length ; i++){
+            result+="<tr><td>" 
+            result+=array[i].getName() + "</td><td>";
+            result+=array[i].getAge() + "</td><td>";
+            result+=array[i].getAdd() + "</td></tr>";
+        }
+        document.getElementById("table").innerHTML = result;
+    }
+</script>
+</html>

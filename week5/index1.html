@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1</title>
+    <style>
+        #result{
+            background-color: black;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 2%;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+<script>
+    alert("Giải phương trình bậc 2\nax^2 + bx + c = 0");
+    var a = prompt("Mời bạn nhập a","0");
+    var b = prompt("Mời bạn nhập b","0");
+    var c = prompt("Mời bạn nhập c","0");
+    var d = (b * b) - (4 * a * c)
+    var result = "";
+    if(a == 0) {
+        if(b == 0){
+            if (c == 0)
+                result = "Vô số nghiệm";
+            else
+                result = "Vô nghiệm";
+        }
+        else
+        result = "x = "+ (-c/b);
+    }
+    else if (d >= 0) {
+        result += "x1 = "+ ((-b + Math.sqrt(d)) / (2 * a));
+        result += "<br>";
+        result += "x2 = "+ ((-b - Math.sqrt(d)) / (2 * a));
+    }
+    else 
+        result = "Vô nghiệm";
+    document.getElementById("result").innerHTML = result;
+</script>
+</html>

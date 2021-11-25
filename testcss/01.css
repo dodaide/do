@@ -1,0 +1,228 @@
+blockquote{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+.id{
+    background-color: aqua;
+    height: 200px;
+    width: 500px;
+    margin: auto;
+    background-image: url(image/3286.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.fixSize{
+    height: 200px;
+    text-align: center;
+}
+p{
+    /* letter-spacing: 2px;
+    word-spacing: 5px; */
+    text-align: justify;
+    text-indent: 0cm;
+    white-space: pre;
+}
+.left{
+    background-color: aqua;
+    height: 300px;
+    width: 500px;
+    display: table-cell;
+}
+.content{
+    background-color: rgb(126, 28, 87);
+    height: 300px;
+    width: 500px;
+    display: table-cell;
+}
+.right{
+    background-color:yellow;
+    height: 300px;
+    width: 500px;
+    display: table-cell;
+}
+.main{
+    display: table;
+}
+.border{
+    height: 300px;
+    width: 300px;
+    background-color: skyblue;
+    margin: auto;
+    border-top-width: 10px;
+    border-top-style: dashed;
+    border-top-color: tomato;
+    border-left: 10px dotted darkblue;
+}
+.A{
+    height: 300px;
+    width: 300px;
+    background-color: violet;
+    text-align: center;
+    float: left;
+}
+.B{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(172, 212, 63);
+    text-align: center;
+    float: left;
+}
+.C{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(230, 117, 13);
+    text-align: center;
+    float: right;
+}
+.D{
+    height: 300px;
+    background-color: rgb(0, 163, 27);
+    text-align: center;
+    line-height: 300px;
+    clear: both;
+}
+.main2{
+    margin: 0 auto;
+    display: table;
+}
+.left2{
+    width: 26%;
+    padding: 2%;
+    background-color: aqua;
+    float: left;
+
+    height: 500px;
+}
+.content2{
+    width: 36%;
+    padding: 2%;
+    background-color: blueviolet;
+    float: left;
+
+    height: 500px;
+}
+.right2{
+    width: 26%;
+    padding: 2%;
+    background-color: cadetblue;
+    float: left;
+
+    height: 500px;
+}
+li{
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    float: left;
+    margin-inline:10px ;
+}
+.head{
+    height: 100px;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+}
+ul{
+    list-style-type: none;
+    list-style-position: inside;
+    border: solid 5px white;
+    display: inline-block;
+    padding-left: 0px;
+    margin: auto;
+}
+.block{
+    height: 800px;
+    border: 5px solid black;
+    position: relative;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+}
+.boxA{
+    background-color: red;
+    border: dotted 10px green;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+.boxB{
+    background-color: rgb(251, 255, 0);
+    border:groove 10px gray;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+.boxC{
+    border: dashed 10px red;
+    background-color: aqua;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+.boxD{
+    border: inset 10px rgb(115, 35, 206);
+    background-color: rgb(102, 199, 102);
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+}
+.Meibeo{
+    width: 500px;
+    height: 800px;
+    background-image: url(image/3286.jpg);
+    background-position: center top;
+    margin: 20px auto;
+}
+.top{
+    height: 50px;
+    width: 100%;
+    background-color: antiquewhite;
+    top: 0px;
+    position: fixed;
+}
+.bottom{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(196, 148, 86);
+    bottom: 0px;
+    position: fixed;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+}
+.whitebox{
+    width: 40%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    top: 25%;
+    left: 30%;
+    position: fixed;
+}
+.ima{
+    height: 100%;
+    width: 80%;
+    left: 10%;
+    position: relative;
+}
+.mei{
+    background-color: rgba(255, 255, 255, 0.671);
+    height: 10%;
+    width: 100%;
+    bottom: 10%;
+    position: absolute;
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
