@@ -1,0 +1,178 @@
+.content-section{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 64px 30px 100px 30px;    
+}
+
+.section-heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.section-sub{
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.about-text{
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.member{
+    padding-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.member-item{
+    height: 200px;
+}
+.member-name{
+    text-align: center;
+    margin: 16px 0;
+
+}
+
+.member-img{
+    border-radius: 10px;
+    width: 200px;
+}
+
+#tour{
+    background-color: var(--timDam);
+}
+
+.tiket-list{
+    background-color: var(--timNhat);
+}
+
+.tiket-list li{
+    height: 40px;
+    padding: 11px 16px;
+    border-bottom: 3px solid var(--timDam);
+    color: white;
+    list-style: none;
+}
+
+.Sold-out{
+    background-color: orangered;
+    padding: 4px;
+    color: white;
+    margin-left: 20px;
+}
+
+.Sold{
+    color: white;
+    background-color: black;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: -2px;
+}
+
+.place-list{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.place-item{
+    background-color: var(--xanhLa);
+    width: 220px;
+    color: white;
+}
+
+.place-body{
+    padding: 16px;
+}
+
+.place-text{
+    min-height: 250px;
+    font-weight: 400;
+}
+
+.place-time{
+    margin: 16px 0;
+    font-weight: 300;
+}
+
+.btn{
+    background-color: var(--vang);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px 0;
+    display: inline-block;
+    border: none;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.btn:active{
+    background-color: orangered;
+    color: white;
+}
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.contact-item{
+    margin-bottom: 20px;
+}
+
+.form{
+    padding: 7px;
+    margin-left: 10px;
+    border-top: black solid 1px;
+}
+
+.form-mess{
+    margin-top: 10px;
+    width: 375px;
+}
+
+.send{
+    margin-bottom: 0px;
+    float: right;
+}
+
+#footer{
+    background-color: #f7f7f7;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer div a{
+    color: #666;
+    font-size: 30px;
+}
+
+#footer div a:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#footer p{
+    color: #666;
+    font-size: 30px;
+    margin-top: 30px;
+}

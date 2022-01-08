@@ -1,0 +1,125 @@
+.content{
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 16px;
+}
+.content__title{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing:0.1em;
+    text-align: center;
+    font-size: 2em;
+}
+.content__slogan{
+    text-align: center; 
+    font-style: italic;
+    opacity: 0.7;
+}
+.content__body{
+    font-weight: 400;
+}
+.content__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+.content__member{
+    text-align: center;
+}
+.member__img{
+    border-radius: 20px;
+    width: 230px;
+}
+
+#tour{
+    background-color: var(--timDam);
+    color: white;
+}
+
+.content__date{
+    background-color: var(--timNhat);
+    padding: 1em;
+    margin-bottom: 10px;
+}
+
+.content__month{
+    min-width: 100px;
+    display: inline-block;
+}
+
+.content__sold-out{
+    background-color: var(--vang);
+    padding: 0.5em;
+}
+
+.content__sold{
+    background-color: var(--xanhLa);
+    border-radius: 30px;
+    padding: 0.5em;
+}
+
+.content__ticket{
+    width: 230px;
+    background-color: var(--xanhLa);
+}
+
+.ticket__content{
+    padding: 1em;
+}
+
+.ticket__img{
+    width: 230px;
+}
+
+.ticket-cost{
+    text-align: right;
+}
+
+.btn{
+    background-color: var(--vang);
+    color: white;
+    border: none;
+    padding: 1em;
+}
+
+.btn:hover{
+    background-color: black;
+    cursor: pointer;
+    animation: btn-change ease 0.5s;
+}
+
+@keyframes btn-change{
+    from{
+        background-color: var(--vang);
+    }
+    to{
+        background-color: black;
+    }
+}
+
+.ticket__date{
+    font-weight: 300;
+}
+
+.ticket__body{
+    font-weight: 400;
+}
+
+.form{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.content__contact{
+    flex: 1;
+}
+
+.contact__form{
+    padding: 0.5em 0.2em;
+    margin-left: 10px;
+    flex: 1;
+    width: 0px;
+    border: 1px solid black;
+}

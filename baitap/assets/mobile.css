@@ -1,0 +1,33 @@
+@media(max-width:739px){
+    #nav__menu{
+        display: block;
+    }
+    #nav__search{
+        display: none;
+    }
+    .nav__item{
+        display: block;
+    }
+    #nav{
+        height: 8vh;
+        overflow: hidden;
+    }
+    .content__wrap{
+        flex-direction: column;
+    }
+    .content__member img{  
+        margin: auto;
+        width: 400px;
+        max-width: 100%;
+    }
+    .content__ticket{
+        margin: auto;
+        margin-top: 20px;
+        width: 400px;
+        max-width: 100%;
+    }
+    .content__ticket img{
+        width: 400px;
+        max-width: 100%;
+    }
+}

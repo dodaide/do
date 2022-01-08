@@ -1,0 +1,86 @@
+.member__img:hover{
+    cursor: pointer;
+}
+.black-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: none;
+    animation: overlay-appear ease 0.5s;
+}
+@keyframes overlay-appear{
+    from{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+.show-img{
+    position: relative;
+    width: 600px;
+    max-width: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    animation: img-appear ease 0.5s;
+}   
+@keyframes img-appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.close-window{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2px 10px;
+}
+.close-window:hover{
+    background-color: var(--vang);
+    cursor: pointer;
+}
+#buy-ticket{
+    position: relative;
+    width: 1000px;
+    max-width: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    background-color: white;
+    animation: img-appear ease 0.5s, buy-ticket-appear ease 0.5s;
+}
+@keyframes buy-ticket-appear{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(-50%);
+    }
+}
+.buy-ticket__header{
+    background-color: var(--xanhLa);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.buy-ticket__title{
+    text-transform: uppercase;
+    display: inline;
+}
+.buy-ticket__body{
+    padding: 20px;
+}
+.form-label{
+    padding:1em 0em 1em 0em;
+    min-width: 60px;
+}

@@ -5,29 +5,256 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testjs</title>
-    <link rel="stylesheet" href="css.css">
+    <title>The circus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/12/Eo_circle_orange_letter-d.svg"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/header&slider.css">
+    <link rel="stylesheet" href="assets/content&footer.css">
+    <link rel="stylesheet" href="assets/modal&showimg.css">
+    <link rel="stylesheet" href="assets/mobile.css">
 </head>
-<body">
-    <input type="text" id="is">
-    <select id="city">
-        <option value="Hà Nội">Hà Nội</option>
-        <option value="Ninh Bình">Ninh Bình</option>
-    </select>
+
+<body>
+    <div id="header">
+        <ul id="nav">
+            <li onclick="showMenu()"><a href="#">Home</a></li>
+            <li onclick="showMenu()"><a href="#band">About</a></li>
+            <li onclick="showMenu()"><a href="#tour">Tour</a></li>
+            <li onclick="showMenu()"><a href="#contacted">Contact</a></li>
+            <li id="more">
+                <a>
+                    More
+                    <i class="fas fa-sort-down"></i>
+                </a>
+                <ul id="more-list">
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Extras</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div id="search-button">
+            <i class="fas fa-search"></i>
+        </div>
+        <div onclick="showMenu()" id="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div id="slider" class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/image/IMG_1427.JPG" style="width:100%">
+            <div class="text">
+                <h3>Amet consectetur adipisicing</h3>
+                <p>Quidem, atque ab culpa harum ipsam vitae illo, eaque reiciendis sed qui autem.</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/image/IMG_1503.JPG" style="width:100%">
+            <div class="text">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/image/IMG_1551.JPG" style="width:100%">
+            <div class="text">
+                <h3>Odit aut voluptatibus</h3>
+                <p>Expedita architecto incidunt tempora esse accusantium quos, sunt quia vitae.</p>
+            </div>
+        </div>
+
+    </div>
     <br>
-    <input class="sex" type="radio" name="gender" value="Nam">Nam
-    <input class="sex" type="radio" name="gender" value="Nữ">Nữ
-    <input class="sex" type="radio" name="gender" value="Thứ ba">Thứ ba
-    <button onclick="show()">Nhập</button>
-    <div id="result"></div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div id="content">
+        <div id="band" class="content-section">
+            <h2 class="section-heading">The Circus</h2>
+            <p class="section-sub">We will rock you</p>
+            <p class="about-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat similique
+                distinctio nam quam ea.
+                Molestias possimus praesentium, quibusdam nemo laborum facere, incidunt soluta quas sed ea, voluptatem
+                accusantium doloribus dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat similique
+                distinctio nam quam ea.
+                Molestias possimus praesentium, quibusdam nemo laborum facere, incidunt soluta quas sed ea, voluptatem
+                accusantium doloribus dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat similique
+                distinctio nam quam ea.
+                Molestias possimus praesentium, quibusdam nemo laborum facere, incidunt soluta quas sed ea, voluptatem
+                accusantium doloribus dolor.
+            </p>
+            <div class="member">
+                <div class="member-item">
+                    <h4 class="member-name">Name</h4>
+                    <img onclick="showimg(0)" class="member-img" src="assets/image/mei1.jpg" alt="">
+                </div>
+                <div class="member-item">
+                    <h4 class="member-name">Name</h4>
+                    <img onclick="showimg(1)" class="member-img"
+                        src="assets/image/mei3.jpg" alt="">
+                </div>
+                <div class="member-item">
+                    <h4 class="member-name">Name</h4>
+                    <img onclick="showimg(2)" class="member-img" src="assets/image/mei2.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="tour">
+            <div class="content-section">
+                <h2 style="color: white;" class="section-heading">Tour dates</h2>
+                <p style="color: white;" class="section-sub">Remember to book your tickets!</p>
+                <ul class="tiket-list">
+                    <li>September<span class="Sold-out">Sold out</span></li>
+                    <li>October<span class="Sold-out">Sold out</span></li>
+                    <li>November<span class="Sold">50</span></li>
+                </ul>
+
+                <div class="place-list">
+                    <div class="place-item">
+                        <img width="220px" class="place-img" src="https://www.w3schools.com/w3images/newyork.jpg"
+                            alt="">
+                        <div class="place-body">
+                            <h3 class="place-heading">New York</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Consectetur, voluptate, quod labore ab numquam earum error ut quibusdam itaque aliquam
+                                adipisci tempora. Maxime excepturi esse eligendi dolore debitis quidem molestias!</p>
+                            <button onclick="showTicket()" class="btn">Buy tickets</button>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img width="220px" class="place-img" src="https://www.w3schools.com/w3images/paris.jpg" alt="">
+                        <div class="place-body">
+                            <h3 class="place-heading">Paris</h3>
+                            <p class="place-time">Sat 28 Nov 2016</p>
+                            <p class="place-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                                ratione? Esse cupiditate, rerum, ducimus ut ab fugiat architecto omnis minima quibusdam
+                                tempora unde quis impedit deserunt beatae voluptas eaque modi!</p>
+                            <button onclick="showTicket()" href="#" class="btn">Buy tickets</button>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img width="220px" class="place-img" src="https://www.w3schools.com/w3images/sanfran.jpg"
+                            alt="">
+                        <div class="place-body">
+                            <h3 class="place-heading">San Francisco</h3>
+                            <p class="place-time">Sun 29 Nov 2016</p>
+                            <p class="place-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                                ratione? Esse cupiditate, rerum, ducimus ut ab fugiat architecto omnis minima quibusdam
+                                tempora unde quis impedit deserunt beatae voluptas eaque modi!</p>
+                            <button onclick="showTicket()" href="#" class="btn">Buy tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacted" class="content-section">
+            <h2 class="section-heading">Contact</h2>
+            <p class="section-sub">Fan? Drop a note!</p>
+            <div id="contact">
+                <div id="contact-list">
+                    <p class="contact-item">
+                        <i style="width: 30px; text-align: center;" class="fas fa-map-marker-alt"></i>
+                        Chicago, US
+                    </p>
+                    <p class="contact-item">
+                        <i style="width: 30px; text-align: center;" class="fas fa-phone-alt"></i>
+                        Phone:<a href="tel:+00 151515">+00 151515</a>
+                    </p>
+                    <p class="contact-item">
+                        <i style="width: 30px; text-align: center;" class="fas fa-envelope"></i>
+                        Email:<a href="mailto:mail@mail.com">mail@mail.com</a>
+                    </p>
+                </div>
+                <form action="">
+                    <div>
+                        <input type="text" required placeholder="Name" name="" class="form">
+                        <input type="email" required placeholder="Email" name="" class="form">
+                    </div>
+                    <div>
+                        <input type="text" required placeholder="Message" name="" class="form-mess form">
+                    </div>
+                    <input required type="submit" onclick="send()" class="btn send" value="SEND">
+                </form>
+            </div>
+        </div>
+        <div>
+            <img onclick="showMap()" title="Bấm vào để xem địa chỉ trên google map" width="100%"
+                src="https://www.w3schools.com/w3images/map.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="footer">
+        <div>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-snapchat-square"></i></a>
+            <a href="#"><i class="fab fa-pinterest-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-behance-square"></i></a>
+        </div>
+        <p>
+            Powered by
+            <a style="color: #666;" href="https://www.facebook.com/dodaide2002/">Dodaide</a>
+        </p>
+    </div>
+
+    <div id="modal">
+        <div class="modal-container">
+            <div onclick="closeTicket()" class="modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-header">
+                <i style="font-size: 30px;" class="fas fa-ticket-alt"></i>
+                <h1 style="display: inline-block; font-weight: 100;">Tickets</h1>
+            </div>
+            <div class="modal-body">
+                <label>
+                    <i class="fas fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input placeholder="How many?" class="modal-input" type="text">
+                <label>
+                    <i class="fas fa-user"></i>
+                    Send To
+                </label>
+                <input placeholder="Enter email" class="modal-input" type="text">
+                <button onclick="pay()" id="modal-pay">
+                    Pay
+                    <i class="fas fa-check"></i>
+                </button>
+                <div id="modal-task">
+                    <button onclick="closeTicket()" class="modal-close2">
+                        Close
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <span>Need <a style="color: blue;" href="">help?</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div onclick="closeimg()" id="showimages">
+    </div>
 </body>
-<!-- <script src="testjs.js"></script> -->
-<script>
-    function show(){
-        var name = document.getElementById("is").value + " " + document.getElementById("city").value + " " + document.querySelector(".sex:checked").value;
-        document.getElementById("result").innerHTML = name;
-        document.getElementById("is").value = "";
-    }
-</script>
+<script src="assets/scripts.js"></script>
 
 </html>
