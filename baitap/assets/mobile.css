@@ -30,6 +30,9 @@
         width: 400px;
         max-width: 100%;
     }
+    .ticket-cost{
+        margin: 10px 0 10px 0;
+    }
     .content__contact{
         width: 100%;
     }
@@ -42,10 +45,13 @@
         margin: 10px 0 10px 0;
     }
     .form-select{
-        margin-left: 0px;
+        margin: 10px 0 10px 0;
         padding: 0.5em 0.2em;
     }
     .form-select-label{
         margin-left: 0px;
+    }
+    .form-label{
+        padding: 0;
     }
 }
