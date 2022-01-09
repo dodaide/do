@@ -84,3 +84,10 @@
     padding:1em 0em 1em 0em;
     min-width: 60px;
 }
+.form-select{
+    margin-left:10px;
+    border: 2px solid #ddd;
+}
+.form-select-label{
+    margin-left: 20px;
+}

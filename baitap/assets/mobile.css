@@ -30,4 +30,22 @@
         width: 400px;
         max-width: 100%;
     }
+    .content__contact{
+        width: 100%;
+    }
+    .form{
+        flex-direction: column;
+        margin: 0;
+    }
+    .contact__form{
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+    .form-select{
+        margin-left: 0px;
+        padding: 0.5em 0.2em;
+    }
+    .form-select-label{
+        margin-left: 0px;
+    }
 }

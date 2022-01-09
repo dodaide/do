@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -237,7 +236,7 @@
                 <div class="form">
                     <Label class="form-label">Họ:</Label>
                     <input name="ho" type="text" required placeholder="Trần Doãn" class="contact__form">
-                    <Label style="margin-left:1em" class="form-label">Tên:</Label>
+                    <Label class="form-select-label form-label">Tên:</Label>
                     <input name="ten" type="text" required placeholder="Đô" class="contact__form">
                 </div>
                 <div class="form">
@@ -250,20 +249,20 @@
                 </div>
                 <div class="form">
                     <Label class="form-label">Nơi:</Label>
-                    <select name="noi" onChange="selectTicketPlace(this);" style="margin-left:10px; border: 1px;"
+                    <select name="noi" onChange="selectTicketPlace(this);" class="form-select"
                         name="" id="ticket-place">
                         <option value="">Newyork</option>
                         <option value="">Paris</option>
                         <option value="">San Francisco</option>
                     </select>
-                    <Label style="margin-left:1em" class="form-label">Loại:</Label>
-                    <select name="loai" onChange="selectTypeTicket(this);" style="margin-left:10px; border: 1px;"
+                    <Label class="form-select-label form-label">Loại:</Label>
+                    <select name="loai" onChange="selectTypeTicket(this);" class="form-select"
                         name="" id="ticket-type">
                         <option value="">Vip</option>
                         <option value="">Thường</option>
                         <option value="">Free</option>
                     </select>
-                    <Label style="margin-left:1em" class="form-label">Số lượng:</Label>
+                    <Label class="form-select-label form-label">Số lượng:</Label>
                     <input name="soluong" onChange="howManyTicket();" type="number" id="ticket-howmany" required
                         placeholder="0" class="contact__form">
                 </div>
