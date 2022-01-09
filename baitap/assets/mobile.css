@@ -55,3 +55,20 @@
         padding: 0;
     }
 }
+
+@media(max-height:804px){
+    .buy-ticket__header{
+        padding: 0;
+    }
+    .form-select{
+        margin: 4px 0 4px 0;
+        padding: 2px;
+    }
+    .contact__form{
+        margin: 4px 0 4px 0;
+        padding: 2px;
+    }
+    .ticket-cost{
+        margin: 4px 0 4px 0;
+    }
+}
