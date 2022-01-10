@@ -45,14 +45,17 @@ function showMap(){
 
 function showMenu(){
   var x = document.getElementById("nav");
-  var check = x.style.height;
-  if(check=="auto"){
-      x.style.overflow = "hidden";
-      x.style.height = null;
-  }
-  else{
-      x.style.overflow = "visible";
-      x.style.height = "auto";
+  var checkWidth = screen.width;
+  if(checkWidth < 740){
+    var check = x.style.height;
+    if(check=="auto"){
+        x.style.overflow = "hidden";
+        x.style.height = null;
+    }
+    else{
+        x.style.overflow = "visible";
+        x.style.height = "auto";
+    }
   }
 }
 var ticketPlace = new Number;
