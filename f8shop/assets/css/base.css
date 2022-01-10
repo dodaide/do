@@ -33,6 +33,17 @@ html{
   }
 }
 
+@keyframes growth{
+  from{
+    transform: scale(0);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .modal{
   position: fixed;
   top: 0;
@@ -40,6 +51,7 @@ html{
   left: 0;
   right: 0;
   display: flex;
+  animation: fadeIn ease 0.2s;
 }
 
 .modal__overlay{
@@ -55,6 +67,7 @@ html{
   position: relative;
   z-index: 1;
   border-radius: 5px;
+  animation: growth ease 0.2s
 }
 
 .btn{
