@@ -67,6 +67,10 @@
         transform: translateY(-50%);
     }
 }
+#buy-ticket{
+    max-height: 90vh;
+    overflow: auto;
+}
 .buy-ticket__header{
     background-color: var(--xanhLa);
     color: white;
