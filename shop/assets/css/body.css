@@ -1,0 +1,287 @@
+.body{
+    padding: 20px 0 20px 0;
+    background-color: var(--body-color);
+}
+.category{
+    background-color: white;
+    box-shadow: var(--shadow-color);
+}
+.category__header{
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+    padding-bottom: 0;
+    font-weight: 500;
+}
+.category__list{
+    padding-left: 0;
+    list-style: none;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.category__item{
+    padding: 10px 0 10px 0;
+    margin: 10px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--border-color);
+}
+.category__item a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.category__item a:hover{
+    color: var(--main-color);
+}
+.category__item-active{
+    position: relative; 
+}
+.category__item-active a{
+    color: var(--main-color);
+}
+.category__item-active::before{
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 12px;
+    border: 6px solid;
+    border-color: transparent transparent transparent var(--main-color);
+}
+.home-filter{
+    background-color: var(--border-color);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.home-filter-sort{
+    display: flex;
+}
+.home-filter__btn{
+    margin-right: 10px
+}
+.home-filter__label{
+    padding: 10px 0 10px 0;
+}
+.select-input{
+    padding: 10px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    position: relative;
+    width: 150px;
+}
+.select-input:hover .hidden-box{
+    display: block;
+}
+.select-input__label{
+    margin-right: 88px;
+}
+.select-input-choise{
+    width: 150px;
+    left: 0;
+    top: 38px;
+}
+.select-input-choise div{
+    padding: 10px;
+    background-color: white;
+}
+.select-input-choise div:hover{
+    filter: brightness(90%);
+    cursor: pointer;
+}
+.home-filter__page{
+    padding: 10px 0 10px 0;
+}
+.home-filter__page-current{
+    color: var(--main-color);
+}
+.home-filter__page-btn{
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 10px;
+    padding-inline: 15px;
+}
+.home-filter__page-btn:hover{
+    background-color: var(--body-color);
+}
+.home-product-item{
+    position: relative;
+    background-color: white;
+    box-shadow: var(--shadow-color);
+    transition: transform linear 0.2s;
+    will-change: transform;
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.home-product-item:hover{
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+}
+.home-product-item__img{
+    padding-top: 100%;
+    background-size: contain;
+}
+.home-product-item__name{
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 1.5rem;
+    height: 3rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.home-product-item__price{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.home-product-item__price-old{
+    font-size: 0.8rem;
+    color: #666;
+    text-decoration: line-through;
+}
+.home-product-item__price-current{
+    font-size: 1rem;
+    color: var(--main-color);
+}
+.home-product-item__action{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.home-product-item__like{
+    font-size: 0.8rem;
+    color: #666;
+}
+.home-product-item__like--liked.home-product-item__like-icon-fill{
+    display: inline-block;
+}
+.home-product-item__rating{
+    font-size: 0.7rem;
+    color: #D5D5D5;
+}
+.home-product-item__origin{
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+}
+.home-product-item__favourite{
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: white;
+    background-color: var(--main-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.home-product-item__favourite::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-top: 4px solid var(--main-color);
+    border-left: 4px solid transparent;
+    filter: brightness(60%);
+}
+.home-product-item__sale-off{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 45px;
+    text-align: center;
+    background-color: var(--sale-color);
+}
+.home-product-item__sale-off::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-width: 0 20px 6px;
+    border-style: solid;
+    border-color: transparent var(--sale-color) transparent var(--sale-color);
+}
+.home-product-item__sale-off-percent{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.home-product-item__sale-off-label{
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: white;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.pagination-item a{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    min-width: 60px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+.pagination-item--active a{
+    background-color: var(--main-color);
+    color: white;
+}
+footer{
+    background-color: var(--body-color);
+    border-top: 5px solid var(--main-color);
+}
+.footer__header{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.footer__list{
+    list-style: none;
+    padding-left: 0px;
+}
+.footer__item a{
+    text-decoration: none;
+    color: var(--text-color);
+    line-height: 2rem;
+}
+.footer__item a:hover{
+    color: var(--main-color);
+}
+.footer__icon{
+    margin-right: 10px;
+}
+.footer__download{
+    display: flex;
+}
+.footer__download__qr{
+    width: 100px;
+    height: 100px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+.footer__store{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.footer__store__appstore{
+    width: 100px;
+}
+.footer__store__ggplay{
+    width: 100px;
+}

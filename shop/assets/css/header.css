@@ -1,0 +1,232 @@
+.header{
+    background-image: linear-gradient(0,#fe6433,#f53e2d);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__list{
+    margin: 6px 0px;
+    padding: 0;
+}
+.nav__list-left .nav__item{
+    margin-right: 8px;
+}
+.nav__list-right .nav__item{
+    margin-left: 8px;
+}
+.nav__item{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    position: relative;
+    font-size: 0.8rem; 
+}
+.nav__item:hover .hidden-box{
+    display: block;
+}
+.nav__item a{
+    text-decoration: none;
+    color: white;
+}
+.nav__item:hover a{
+    opacity: 0.8;
+}
+.nav__item-separate::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    height: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -7px;
+}
+.nav__item__login{
+    font-weight: 500;
+}
+.nav__item__login:hover{
+    cursor: pointer;
+}
+.header-with-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 6px;
+}
+.header__search{
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 4px;
+    position: relative;
+}
+.header__search__wrap{
+    display: inline-block;
+    position: relative;
+}
+.header__search__input:focus + .hidden-box{
+    display: block;
+}
+.header__search__input{
+    width: 500px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-right: 2px solid var(--border-color);
+}
+.header__search-history{
+    left: 0px;
+    top: 45px;
+    width: 500px;
+    height: 215px;
+    overflow: scroll;
+}
+.header__search-history h3{
+    font-weight: 400;
+    padding-left: 10px;
+}
+.header__search-history ul{
+    padding-left: 0px;
+    list-style: none;
+}
+.header__search-history ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    background-color: white;
+}
+.header__search-history ul li a:hover{
+    filter: brightness(90%);
+}
+.header__logo{
+    display: block;
+}
+.shop-logo{
+    width: 150px;
+}
+.header__search__select{
+    border: none;
+    outline: none;
+}
+.header__search__button{
+    width: 50px;
+}
+.header__cart{
+    margin-left: 104px;
+    color: white;
+    text-align: right;
+    position: relative;
+}
+.header__cart__item{
+    color: white;
+    position: relative;
+    display: block;
+    padding: 10px;
+    padding-right: 0px;
+    font-size: 2rem;
+}
+.header__cart:hover .hidden-box{
+    display: block;
+}
+.header__cart-box{
+    padding: 10px;
+    right: -15px;
+    top: 54px;
+    transform-origin: 95% 0%;
+}
+.header__cart-header h3{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.header__cart-wrap{
+    height: 330px;
+    overflow: scroll;
+}
+.header__cart-body{
+    display: flex;
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: white;
+}
+.header__cart-body:hover{
+    filter: brightness(90%);
+}
+.header__cart-img{
+    width: 100px;
+    height: 100px;
+}
+.header__cart-dis{
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0px 10px 0 10px;
+    width: 230px;
+    text-align: left;
+    font-size: 1rem;
+    height: 1.1rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.header__cart-cost{
+    color: var(--main-color);
+    margin: 0px;
+}
+.nav__qr{
+    display: block;
+    width: 200px;
+}
+.nav__store{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 20px 20px;
+}
+.nav__ggplay{
+    height: 18px;
+}
+.nav__appstore{
+    height: 18px;
+}
+.nav__notification-header{
+    margin-left: 10px;
+}
+.nav__notification-header h3{
+    font-weight: 400;
+    color: var(--text-color);
+}
+.nav__notification-list{
+    padding: 10px;
+    padding-top: 0px;
+    height: 330px;
+    overflow: scroll;
+}
+.nav__notification-item{
+    display: flex;
+    width: 400px;
+    margin-top: 10px;
+    background-color: white;
+}
+.nav__notification-item:hover{
+    filter: brightness(90%);
+}
+.nav__notification__img{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+.nav__notification__dis{
+    color: var(--text-color);
+    margin-left: 10px;
+}
+.nav__notification__dis h4{
+    margin: 0px;
+}
+.nav__notification-footer{
+    padding-top: 10px;
+}
