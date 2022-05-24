@@ -226,12 +226,13 @@
     align-items: center;
     justify-content: center;
     list-style: none;
+    padding-left: 0px;
 }
 .pagination-item a{
     display: block;
     text-decoration: none;
     color: var(--text-color);
-    min-width: 60px;
+    width: 60px;
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -241,7 +242,7 @@
     background-color: var(--main-color);
     color: white;
 }
-footer{
+.footer{
     background-color: var(--body-color);
     border-top: 5px solid var(--main-color);
 }

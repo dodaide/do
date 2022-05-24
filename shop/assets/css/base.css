@@ -20,6 +20,26 @@ html{
     color: var(--text-color);
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 .button{
     border: none;
     padding: 8px;
@@ -65,21 +85,11 @@ html{
     content: "";
     border: 10px solid;
     position: absolute;
-    top: -20px;
+    top: -19px;
     right: 20px;
     border-color: transparent transparent white transparent;
 }
 
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px -10px 0px -10px;
-}
 .grid__column-2{
     padding-left: 10px;
     padding-right: 10px;
