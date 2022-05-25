@@ -2,7 +2,7 @@
 @media (min-width:768px) and (max-width: 1200px){
 
     .content{
-        padding: 40px;
+        padding: 0px 40px;
     }
 
     .content--introduce{
@@ -19,12 +19,39 @@
 
 /* mobile */
 @media (max-width: 768px){
-    
+    #root{
+        display: block;
+    }
+    .barInMobile{
+        display: block;
+        z-index: 1;
+        height: 44px;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    .barInMobile div{
+        color: white;
+        line-height: 44px;
+        padding-left: 12px;
+        display: inline-block;
+    }
+    .sidebar{
+        display: none;
+        min-height: fit-content;
+        width: 100%;
+        margin-top: 44px;
+    }
     .content--logo-img{
         width: 150px;
     }
     .content{
+        margin-top: 60px;
         padding: 0px;
+        width: 100%;
     }
     .content--introduce{
         padding: 38px 8px;
@@ -38,6 +65,7 @@
     }
     .footer{
         margin: 0px;
-        padding: 30px 141px;
+        text-align: center;
+        padding: 30px 12px;
     }
 }

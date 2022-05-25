@@ -17,20 +17,25 @@ html{
     display: flex;
 }
 
+.barInMobile{
+    display: none;
+}
+
 .sidebar{
     width: 150px;
     min-height: 100vh;
     background: #191718;
-    z-index: 1;
 }
 
 .sidebar--list{
     color: #AAAAAA;
     font-weight: 700;
+    list-style: none;
 }
 
 .sidebar--item{
     height: 44px;
+    border-bottom: 1px solid #AAAAAA;
 }
 
 .sidebar--item a{

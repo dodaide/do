@@ -22,6 +22,9 @@
             </ul>
         </div>
         <div class="content">
+            <div class="barInMobile">
+                <div onclick="showBar()">Menu</div>
+            </div>
             <div class="content--logo">
                 <img class="content--logo-img" src="assets/imgs/40b2754bf32a69e46f3afbc0bc31cd28.png" alt="">
             </div>
@@ -77,4 +80,15 @@
         </div>
     </div>
 </body>
+<script>
+    function showBar(){
+        const sideBar = document.querySelector(".sidebar");
+        if(sideBar.style.display==="block"){
+            sideBar.style.display = "none";
+        }
+        else{
+            sideBar.style.display = "block";
+        }
+    }
+</script>
 </html>
